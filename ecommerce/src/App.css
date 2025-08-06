@@ -1,0 +1,83 @@
+/* body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+} */
+
+
+/* :root {
+  --main-bg: #0f0f0f;
+  --card-bg: #1c1c1c;
+  --accent: #f4c10f;
+  --text-color: #ffffff;
+  --muted-text: #ccc;
+}
+
+
+
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--accent);
+  margin-top: 0;
+}
+
+p {
+  color: var(--muted-text);
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--accent);
+  color: #000;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d6a900;
+}
+
+.read-the-docs {
+  display: none;
+}
+
+
+.logo {
+  display: none;
+} */

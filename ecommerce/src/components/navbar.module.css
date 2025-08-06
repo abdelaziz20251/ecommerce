@@ -1,0 +1,122 @@
+/* ====== CONTAINER ====== */
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e30000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 90%;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+}
+
+/* ====== LOGO SECTION ====== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.logo h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+/* ====== NAV LINKS ====== */
+.navbar {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* ====== ACTIVE LINK ====== */
+.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.active::after {
+    width: 100%;
+}
+
+/* ====== HAMBURGER MENU (MOBILE) ====== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+/* ====== RESPONSIVE STYLES ====== */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 200px;
+        padding: 1rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        display: none;
+        z-index: 999;
+    }
+
+    .navbar.open {
+        display: flex;
+    }
+
+    .navbar a {
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+}

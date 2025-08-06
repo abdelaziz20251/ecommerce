@@ -1,0 +1,66 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    min-height: 70vh;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 1 1 400px;
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.ctaButton {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #e65c00;
+}
+
+.imageContainer {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imageContainer {
+        margin-top: 2rem;
+    }
+}
