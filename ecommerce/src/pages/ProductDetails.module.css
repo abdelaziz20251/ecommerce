@@ -1,7 +1,40 @@
-export default function Product_Details() {
-    return (
-        <>
-            <h3>Product Details</h3>
-        </>
-    )
+.productDetails {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.productDetails h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.productDetails img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.productDetails img:hover {
+    transform: scale(1.05);
+}
+
+.productDetails p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.productDetails p:last-child {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #e91e63;
 }

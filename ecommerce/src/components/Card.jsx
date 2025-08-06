@@ -1,8 +1,17 @@
 import React from 'react';
 import style from './Card.module.css';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Card(props) {
+    const [text, setText] = useState("Add to Cart");
+    const handleClick = () => {
+        if (text === "Add to Cart") {
+            setText("Added");
+        } else {
+            setText("Add to Cart");
+        }
+    };
     return (
         <div className={style.card}>
             <div className={style.cardImage}>
@@ -14,7 +23,7 @@ export default function Card(props) {
                 <p className={style.cardPrice}>${props.price}</p>
 
                 <div className={style.cardButtons}>
-                    <button className={style.cardButton}>Add to Cart</button>
+                    <button className={style.cardButton} onClick={handleClick}>{text}</button>
                     <button className={`${style.cardButton} ${style.secondary}`} >
                         <Link to={`/product/${props.product_id}`} >View Details</Link>
                     </button>
